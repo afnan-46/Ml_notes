@@ -98,7 +98,7 @@ GMM_Cluster
 2    36
 3    35
 4    21
-PCA explained variance ratio: 71.77%
+
 
 K-Means
 Silhouette Score: 0.3498  (higher is better)
@@ -118,6 +118,7 @@ Comparison of valid clustering metrics:
 1    DBSCAN            0.0745                1.4907
 2       GMM            0.3323                1.0383
 
+## PCA explained variance ratio: 71.77%
 
 
 
