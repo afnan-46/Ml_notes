@@ -1,110 +1,147 @@
-CSE 475 Lab 2: Unsupervised Learning and Clustering
-> A practical machine-learning lab that applies unsupervised learning techniques to discover meaningful patterns in data.
-Overview
-This project contains the work for CSE 475 Lab 2, focused on unsupervised learning and clustering. The accompanying Jupyter Notebook performs data exploration, preprocessing, clustering, visualization, and result analysis using the supplied datasets.
-The project includes a mall-customer clustering result file and the Adult dataset for additional analysis.
-Objectives
-Understand the basic workflow of unsupervised machine learning.
-Prepare datasets for clustering analysis.
-Select relevant features and transform data when necessary.
-Apply clustering techniques to group similar records.
-Analyze and visualize the clusters produced by the model.
-Interpret the patterns discovered from the data.
-Project Structure
-```text
-lAB_WORK2/
-├── CSE_475_Lab_2_Unsupervised_learning_Clustering _with_2Data.ipynb
-├── adult.csv
-├── Mall_Customers_Clustering_Results.csv
-├── README.md
-└── images/                         # Add exported notebook output images here
-    ├── elbow-method.png            # Optional
-    ├── cluster-visualization.png   # Optional
-    └── result-summary.png          # Optional
-```
-File	Description
-`CSE_475_Lab_2_Unsupervised_learning_Clustering _with_2Data.ipynb`	Jupyter Notebook containing the complete lab workflow, code, outputs, and analysis.
-`adult.csv`	Adult dataset used in the lab.
-`Mall_Customers_Clustering_Results.csv`	Saved clustering results from the mall-customer analysis.
-`images/`	Recommended folder for plots, charts, and screenshots exported from the notebook.
-Technologies
-Python 3
-Jupyter Notebook
-pandas
-NumPy
-Matplotlib
-Seaborn
-scikit-learn
-Installation
-Install the required Python packages:
+# CSE 475 Lab 2: Unsupervised Learning and Clustering
+
+This folder contains the materials for **Lab 2** of CSE 475, focused on applying unsupervised machine-learning techniques to datasets using clustering.
+
+## Contents
+
+| File | Description |
+|---|---|
+| `CSE_475_Lab_2_Unsupervised_learning_Clustering _with_2Data.ipynb` | Jupyter Notebook containing the data analysis, preprocessing, clustering workflow, visualizations, and observations. |
+| `adult.csv` | Adult dataset used for clustering analysis. |
+| `Mall_Customers_Clustering_Results.csv` | Output dataset containing clustering results for the mall-customer analysis. |
+
+## Objectives
+
+- Understand the workflow of unsupervised learning.
+- Prepare and explore datasets before clustering.
+- Group similar observations into clusters.
+- Interpret clustering results through numerical summaries and visualizations.
+- Compare patterns discovered in the supplied datasets.
+
+## Requirements
+
+Use Python 3 and install the packages used by the notebook. A typical setup includes:
+
 ```bash
 pip install jupyter pandas numpy matplotlib seaborn scikit-learn
 ```
-How to Run
-Clone the repository:
-```bash
+
+## How to Run
+
+1. Clone the repository:
+
+   ```bash
    git clone https://github.com/afnan-46/Ml_notes.git
    ```
-Open the lab directory:
-```bash
+
+2. Move into this lab folder:
+
+   ```bash
    cd Ml_notes/lAB_WORK2
    ```
-Start Jupyter Notebook:
-```bash
+
+3. Start Jupyter Notebook:
+
+   ```bash
    jupyter notebook
    ```
-Open the following notebook and run all cells from top to bottom:
-```text
-   CSE_475_Lab_2_Unsupervised_learning_Clustering _with_2Data.ipynb
-   ```
-> Keep `adult.csv` and `Mall_Customers_Clustering_Results.csv` in this directory so the notebook can load them correctly.
-Workflow
-The notebook follows a typical unsupervised-learning pipeline:
-Load and inspect the dataset.
-Clean the data and handle missing or unsuitable values.
-Select features relevant to clustering.
-Encode categorical columns and scale numerical features when required.
-Apply clustering algorithms.
-Determine or compare suitable cluster counts.
-Visualize the identified groups.
-Save and interpret the final results.
-Results
-The final clustering output is available in:
-```text
-Mall_Customers_Clustering_Results.csv
-```
-This file can be used to inspect the cluster assignment associated with each customer record.
-Add Your Output Images
-Export the key charts from the notebook and save them inside the `images/` folder. After adding the image files, remove the HTML comments below to show the outputs in GitHub.
-<!--
-### Elbow Method
 
-![Elbow Method](images/elbow-method.png)
+4. Open `CSE_475_Lab_2_Unsupervised_learning_Clustering _with_2Data.ipynb`.
 
-Use this plot to justify the selected number of clusters.
+5. Run the notebook cells in order. Keep `adult.csv` and `Mall_Customers_Clustering_Results.csv` in the same directory so the notebook can load them correctly.
 
-### Cluster Visualization
+## Expected Workflow
 
-![Cluster Visualization](images/cluster-visualization.png)
+The notebook follows a typical clustering pipeline:
 
-This visualization shows how the clustering model separates records into distinct groups.
+1. Load the dataset.
+2. Inspect its structure and handle missing or unsuitable values.
+3. Select relevant numeric features.
+4. Scale or normalize features where necessary.
+5. Apply clustering techniques.
+6. Evaluate and interpret the identified groups.
+7. Visualize patterns and save results.
 
-### Result Summary
+   <img width="722" height="470" alt="image" src="https://github.com/user-attachments/assets/668462cc-13e9-48d1-a140-cb89fd68f15e" />
+   <img width="1389" height="590" alt="image" src="https://github.com/user-attachments/assets/c302d32d-ab43-4d87-a0c0-97ecddde4d6f" />
+   <img width="612" height="547" alt="image" src="https://github.com/user-attachments/assets/79af2f5e-81d0-4555-9dbd-f92cb5aaa0e5" />
+   <img width="1790" height="590" alt="image" src="https://github.com/user-attachments/assets/f5576403-366c-4916-abc9-f913c65f34e6" />
+   <img width="1389" height="490" alt="image" src="https://github.com/user-attachments/assets/46efb25b-bf11-4d9f-be33-33ce5597c3c4" />
+<img width="691" height="470" alt="image" src="https://github.com/user-attachments/assets/ac761977-3417-48ec-94c3-3a4ae0ca4187" />
+<img width="1890" height="490" alt="image" src="https://github.com/user-attachments/assets/591fa11c-4973-462a-a15d-6bb454c10c83" />
+#
+Cluster counts:
 
-![Result Summary](images/result-summary.png)
-Key Findings
-Add the exact conclusions from the notebook here after checking the final outputs. For example:
-Number of clusters selected: [Add value from notebook]
-Features used for clustering: [Add feature names]
-Best observed pattern: [Add your interpretation]
-Output file: `Mall_Customers_Clustering_Results.csv`
-> Replace the bracketed placeholders with the actual values produced by your notebook. This keeps the README accurate and prevents unsupported claims.
-Reproducibility Notes
-Run every notebook cell in sequence.
-Do not rename or move the included CSV files unless you also update their paths in the notebook.
-Set a fixed `random_state` in clustering code when reproducible results are required.
-Keep versions of Python libraries consistent if results need to match exactly.
-Author
+K-Means:
+KMeans_Cluster
+0    58
+1    39
+2    47
+3    34
+4    22
+Name: count, dtype: int64
+
+DBSCAN (-1 means noise):
+DBSCAN_Cluster
+-1    19
+ 0     9
+ 1    94
+ 2    40
+ 3    26
+ 4    12
+Name: count, dtype: int64
+
+GMM:
+GMM_Cluster
+0    69
+1    39
+2    36
+3    35
+4    21
+
+
+K-Means
+Silhouette Score: 0.3498  (higher is better)
+Davies-Bouldin Index: 1.0245  (lower is better)
+
+DBSCAN
+Silhouette Score: 0.0745  (higher is better)
+Davies-Bouldin Index: 1.4907  (lower is better)
+
+GMM
+Silhouette Score: 0.3323  (higher is better)
+Davies-Bouldin Index: 1.0383  (lower is better)
+
+Comparison of valid clustering metrics:
+  Algorithm  Silhouette Score  Davies-Bouldin Index
+0   K-Means            0.3498                1.0245
+1    DBSCAN            0.0745                1.4907
+2       GMM            0.3323                1.0383
+
+## PCA explained variance ratio: 71.77%
+
+
+
+
+
+
+## Dataset Notes
+
+### Adult dataset
+
+`adult.csv` is included as a local dataset for the lab's analysis. Review the notebook to see which columns are selected, how categorical values are prepared, and how the data is used in clustering.
+
+### Mall customer results
+
+`Mall_Customers_Clustering_Results.csv` stores clustering output from the mall-customer exercise. It can be used to inspect the cluster assigned to each record and compare customer-group characteristics.
+
+## Reproducibility
+
+- Run notebook cells sequentially from top to bottom.
+- Use the included CSV files without changing their filenames or locations.
+- If random initialization is used, set a `random_state` value in the notebook to make results repeatable.
+
+## Author
+
 Afnan Bd  
-East West University  
-Course: CSE 475
+East West University
