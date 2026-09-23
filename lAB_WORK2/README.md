@@ -62,6 +62,68 @@ The notebook follows a typical clustering pipeline:
 6. Evaluate and interpret the identified groups.
 7. Visualize patterns and save results.
 
+   <img width="722" height="470" alt="image" src="https://github.com/user-attachments/assets/668462cc-13e9-48d1-a140-cb89fd68f15e" />
+   <img width="1389" height="590" alt="image" src="https://github.com/user-attachments/assets/c302d32d-ab43-4d87-a0c0-97ecddde4d6f" />
+   <img width="612" height="547" alt="image" src="https://github.com/user-attachments/assets/79af2f5e-81d0-4555-9dbd-f92cb5aaa0e5" />
+   <img width="1790" height="590" alt="image" src="https://github.com/user-attachments/assets/f5576403-366c-4916-abc9-f913c65f34e6" />
+   <img width="1389" height="490" alt="image" src="https://github.com/user-attachments/assets/46efb25b-bf11-4d9f-be33-33ce5597c3c4" />
+<img width="691" height="470" alt="image" src="https://github.com/user-attachments/assets/ac761977-3417-48ec-94c3-3a4ae0ca4187" />
+<img width="1890" height="490" alt="image" src="https://github.com/user-attachments/assets/591fa11c-4973-462a-a15d-6bb454c10c83" />
+#
+Cluster counts:
+
+K-Means:
+KMeans_Cluster
+0    58
+1    39
+2    47
+3    34
+4    22
+Name: count, dtype: int64
+
+DBSCAN (-1 means noise):
+DBSCAN_Cluster
+-1    19
+ 0     9
+ 1    94
+ 2    40
+ 3    26
+ 4    12
+Name: count, dtype: int64
+
+GMM:
+GMM_Cluster
+0    69
+1    39
+2    36
+3    35
+4    21
+PCA explained variance ratio: 71.77%
+
+K-Means
+Silhouette Score: 0.3498  (higher is better)
+Davies-Bouldin Index: 1.0245  (lower is better)
+
+DBSCAN
+Silhouette Score: 0.0745  (higher is better)
+Davies-Bouldin Index: 1.4907  (lower is better)
+
+GMM
+Silhouette Score: 0.3323  (higher is better)
+Davies-Bouldin Index: 1.0383  (lower is better)
+
+Comparison of valid clustering metrics:
+  Algorithm  Silhouette Score  Davies-Bouldin Index
+0   K-Means            0.3498                1.0245
+1    DBSCAN            0.0745                1.4907
+2       GMM            0.3323                1.0383
+
+
+
+
+
+
+
 ## Dataset Notes
 
 ### Adult dataset
