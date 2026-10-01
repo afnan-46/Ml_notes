@@ -1,4 +1,4 @@
-# 🌳 Decision Tree & Random Forest — CSE457 Lab 1
+# 🌳 Decision Tree & Random Forest — CSE475 
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/afnan-46/REPO_NAME/blob/main/Lab1_DT_RF_with_Mushroom.ipynb)
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
