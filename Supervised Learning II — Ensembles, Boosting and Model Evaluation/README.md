@@ -120,15 +120,3 @@ Per the notebook's own deliverables checklist:
 - [ ] The class mapping (which label is 1) stated explicitly in the report.
 - [ ] The test set appears only in Task 8.
 
-**Marks:** Implementation 4 · Result analysis 3 · Report and discussion 3 ·
-**Total 10**.
-
-## 8. Known gaps to check before submitting
-
-- `config_table()` (Task 3) is defined but never called in the supplied
-  notebook — add `display(config_table(gs_ada))` / `display(config_table(gs_xgb))`
-  if your lab sheet expects the full nine-configuration grid table.
-- The optional nested-CV cell at the end of Task 3 is set to
-  `RUN_NESTED = False` by default; it gives an unbiased post-tuning score
-  but is slow (225 fits per model) — switch it on if your report needs the
-  unbiased figure rather than the slightly optimistic `best_score_`.
